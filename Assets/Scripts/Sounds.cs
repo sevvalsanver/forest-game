@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BackGroundSongControl : MonoBehaviour
+public class Sounds : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public AudioClip backgroundsong;
+    public AudioClip sound;
     AudioSource aSource;
 
     void Start()
@@ -17,24 +17,20 @@ public class BackGroundSongControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.Z))
         {
             aSource.Pause();
 
         }
-        if (Input.GetKeyDown(KeyCode.B))
+        if (Input.GetKeyDown(KeyCode.X))
         {
             aSource.Play();
 
         }
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.C))
         {
-            aSource.PlayOneShot(backgroundsong, .7f);
+            aSource.PlayOneShot(sound, .7f);
 
         }
     }
 }
-
-
-
-
