@@ -74,6 +74,12 @@ public class CharacterMovement : MonoBehaviour
         }
         else if (other.gameObject.name == "Obstacle")
         {
+            Debug.Log("carpisma");
+            _scoreTxt = GameObject.Find("Canvas/txtScore").GetComponent<TextMeshProUGUI>();
+            levelScore = float.Parse(_scoreTxt.text, CultureInfo.InvariantCulture.NumberFormat);
+            Debug.Log(levelScore);
+            _scoreTxt.text = levelScore.ToString();
+            Debug.Log("carpisma");
         }
         else
         {
