@@ -545,6 +545,7 @@ GameObject:
   - component: {fileID: 556397996}
   - component: {fileID: 556397999}
   - component: {fileID: 556398000}
+  - component: {fileID: 556398001}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -640,6 +641,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3b7e26ce91fed1418adec32f52e0fa4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &556398001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556397995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f8abfca0906dea47a057f44dc7d37c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &848107933
@@ -1302,8 +1315,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 556397999}
-        m_TargetAssemblyTypeName: PlayGameButton, Assembly-CSharp
+      - m_Target: {fileID: 556398001}
+        m_TargetAssemblyTypeName: LogInButton, Assembly-CSharp
         m_MethodName: DigerSahne
         m_Mode: 1
         m_Arguments:
